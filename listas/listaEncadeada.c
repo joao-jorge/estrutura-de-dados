@@ -1,8 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "listaEncadeada.h"
 
-int main()
+
+//CRIAR UMA LISTA ENCADEADA 
+Lista criarLista()
 {
-
-  return 0;
+  return NULL;
 }
