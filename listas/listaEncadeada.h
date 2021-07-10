@@ -8,5 +8,8 @@ typedef struct
   Lista *prox;
 }Lista;
 
-
+//Funcao de criacao da lista
 Lista criarLista();
+
+//Função que insere no inicio da lista
+Lista inserir(Lista *l, int elemento);

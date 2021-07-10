@@ -1,6 +1,9 @@
 # Prerequisites
 *.d
 
+# Ficheiros out
+*.out
+
 # Object files
 *.o
 *.ko

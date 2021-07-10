@@ -3,8 +3,12 @@
 #include "listaEncadeada.h"
 
 
-//CRIAR UMA LISTA ENCADEADA 
 Lista criarLista()
 {
   return NULL;
+}
+
+Lista *inserir(Lista *l, int elemento)
+{
+  
 }
