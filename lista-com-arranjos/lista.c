@@ -40,7 +40,10 @@ void show(LIST *l)
 }
 
 // Search a element in a sequential search
-//int linearSearch(LIST *l, ITEM item);
+int linearSearch(LIST *l, ITEM item)
+{
+  
+}
 
 // Search a element with divide and conquer approach
 //int divideAndConquerSearch(LIST *l, ITEM item);
