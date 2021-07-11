@@ -13,7 +13,7 @@ typedef enum { false = 0, true = 1 }boolean;
 typedef struct { int key; }ITEM;
 typedef struct { ITEM item[LIST_SIZE]; int nElem; }LIST;
 
-void initialize(LIST l);
+void initialize(LIST *l);
 
 // Size of the list
 int size(LIST *l);
@@ -22,7 +22,7 @@ int size(LIST *l);
 boolean insert(LIST *l, ITEM item);
 
 // Show all elements of a list
-void show(LIST l);
+void show(LIST *l);
 
 // Search a element in a sequential search
 int linearSearch(LIST *l, ITEM item);
@@ -35,3 +35,5 @@ int orderedSearch(LIST *l, ITEM item);
 
 // Insert a element in a ordered list
 boolean insertOrderedList(LIST *l, ITEM item);
+
+#endif // LISTA_H
