@@ -19,7 +19,7 @@ void initialize(LIST l);
 int size(LIST *l);
 
 // Insert a element in the list
-int insert(LIST *l, ITEM item);
+boolean insert(LIST *l, ITEM item);
 
 // Show all elements of a list
 void show(LIST l);
