@@ -90,24 +90,21 @@ int orderedLinearSearch(LIST *l, int item)
 }
 
 // Insert a element in a ordered list
-// Not working yet
+// 02 04 04 06 08 10 12: [6], quero inserir 3
+//  0  1  2  3  4  5  6
 boolean insertOrderedList(LIST *l, int item)
 {
-  
-  int i = size(l) - 1;
+  int i = size(l) - 1, aux;
   if(size(l) == LIST_SIZE)
     return false;
   l->nElem++;
-  while(i > 0)
+  while(item < l->item[i].key)
   {
-    if(l->item[i].key > item)
-      {
-        l->item[l->nElem].key = l->item[i].key;
-      }
-    if(item > l->item[i].key)
-      l->item[i].key = item;  
+    l->item[i+1].key = l->item[i].key;
     i--;
+    aux = 0;
   }
+  l->item[aux+1].key = item;
   return true;
 }
 
