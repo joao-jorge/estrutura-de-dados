@@ -25,15 +25,15 @@ boolean insert(LIST *l, ITEM item);
 void show(LIST *l);
 
 // Search a element in a sequential search
-int linearSearch(LIST *l, ITEM item);
+int linearSearch(LIST *l, int item);
 
 // Search a element with divide and conquer approach
-int divideAndConquerSearch(LIST *l, ITEM item);
+int divideAndConquerSearch(LIST *l, int item);
 
 // Search a element in a ordered list
-int orderedSearch(LIST *l, ITEM item);
+int orderedLinearSearch(LIST *l, int item);
 
 // Insert a element in a ordered list
-boolean insertOrderedList(LIST *l, ITEM item);
+boolean insertOrderedList(LIST *l, int item);
 
 #endif // LISTA_H
