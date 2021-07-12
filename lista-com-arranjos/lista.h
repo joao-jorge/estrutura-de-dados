@@ -36,4 +36,7 @@ int orderedLinearSearch(LIST *l, int item);
 // Insert a element in a ordered list
 boolean insertOrderedList(LIST *l, int item);
 
+// Remove a element from the list
+int removeElement(LIST *l, int item);
+
 #endif // LISTA_H

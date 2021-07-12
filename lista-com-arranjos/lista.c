@@ -110,3 +110,19 @@ boolean insertOrderedList(LIST *l, int item)
   }
   return true;
 }
+
+// Remove a element from the list
+int removeElement(LIST *l, int item)
+{
+  int index = linearSearch(l, item);
+  if(index == -1)
+    return -1;
+  int removed = l->item[index].key;
+  for(int i = index; i < l->nElem; i++)
+  {
+    l->item[index].key = l->item[index+1].key;
+    index++;
+  }
+  l->nElem--;
+  return removed;
+}
